@@ -1,0 +1,107 @@
+$fontColor: #0d2a5f;
+$fontFamily: 'Kurale',
+'Times New Roman',
+Times,
+serif;
+body {
+    color: $fontColor;
+    font-family: $fontFamily;
+    font-size: 16px;
+}
+
+.header {
+    &-logo {
+        text-align: center;
+    }
+    &-brand {
+        text-align: center;
+        h1 {
+            line-height: 1;
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    @media screen and (min-width: 650px) {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.content {
+    &-img {
+        height: auto;
+        width: 100%;
+    }
+    &-hdr {
+        border-bottom: 4px solid $fontColor;
+        font-size: 9vw;
+        margin: 0;
+        text-align: center;
+    }
+    @media screen and (min-width: 800px) {
+        &-hdr {
+            font-size: 4vw;
+        }
+    }
+}
+
+.teasers {
+    padding: 40px 0;
+    @media screen and (min-width: 800px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.teaser {
+    border: 1px solid $fontColor;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+    &-img {
+        height: auto;
+        max-width: 100%;
+    }
+    &-title {
+        font-size: 6vw;
+        line-height: 1;
+        margin: 0;
+    }
+    &-link {
+        color: $fontColor;
+        text-decoration: none;
+        &:hover {
+            color: lighten($fontColor, 30%);
+        }
+    }
+    @media screen and (min-width: 800px) {
+        flex: 0 1 33%;
+        margin: 0 20px 0 0;
+        &:nth-child(3) {
+            margin: 0;
+        }
+        &-title {
+            font-size: 2vw;
+        }
+    }
+    @media screen and (min-width: 1405px) {
+        &-title {
+            font-size: 1.3vw;
+        }
+    }
+}
+
+.footer {
+    border-top: 4px solid $fontColor;
+    padding: 40px;
+}
