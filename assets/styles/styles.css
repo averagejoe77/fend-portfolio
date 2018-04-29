@@ -12,15 +12,6 @@ body {
   text-align: center;
 }
 
-.hdr-brand h1 {
-  line-height: 1;
-  margin: 0;
-}
-
-.hdr-brand p {
-  margin: 0;
-}
-
 @media screen and (min-width: 650px) {
   .hdr {
     align-items: center;
@@ -31,6 +22,15 @@ body {
     max-width: 1200px;
     margin: 0 auto;
   }
+}
+
+.brand-name {
+  line-height: 1;
+  margin: 0;
+}
+
+.brand-tagline {
+  margin: 0;
 }
 
 .content-img {
