@@ -4,25 +4,25 @@ body {
   font-size: 16px;
 }
 
-.header-logo {
+.hdr-logo {
   text-align: center;
 }
 
-.header-brand {
+.hdr-brand {
   text-align: center;
 }
 
-.header-brand h1 {
+.hdr-brand h1 {
   line-height: 1;
   margin: 0;
 }
 
-.header-brand p {
+.hdr-brand p {
   margin: 0;
 }
 
 @media screen and (min-width: 650px) {
-  .header {
+  .hdr {
     align-items: center;
     display: flex;
     flex-direction: row;
